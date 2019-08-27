@@ -18,6 +18,7 @@ public class RecordEvent {
 
     public static final EventFactory<RecordEvent> FACTORY = new EventFactory<RecordEvent>() {
 
+        @Override
         public RecordEvent newInstance() {
             return new RecordEvent();
         }

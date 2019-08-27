@@ -24,6 +24,7 @@ public class RecordWorkHandler implements WorkHandler<RecordEvent> {
         this.metric = context.getMetric();
     }
 
+    @Override
     public void onEvent(RecordEvent event) {
         if (!isWriterError) {
             try {

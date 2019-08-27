@@ -2,7 +2,7 @@ package opensource.hdata.core.plugin;
 
 public interface Pluginable {
 
-    public String getPluginName();
+    String getPluginName();
 
-    public void setPluginName(String name);
+    void setPluginName(String name);
 }

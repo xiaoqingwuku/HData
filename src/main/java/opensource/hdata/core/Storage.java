@@ -13,6 +13,7 @@ public class Storage {
 
     private static final EventTranslatorOneArg<RecordEvent, Record> TRANSLATOR = new EventTranslatorOneArg<RecordEvent, Record>() {
 
+        @Override
         public void translateTo(RecordEvent event, long sequence, Record record) {
             event.setRecord(record);
         }

@@ -11,19 +11,23 @@ public class DefaultRecord implements Record {
         fields = new Object[fieldCount];
     }
 
+    @Override
     public void addField(int index, Object field) {
         fields[index] = field;
         this.cursor++;
     }
 
+    @Override
     public void addField(Object field) {
         addField(cursor, field);
     }
 
+    @Override
     public Object getField(int index) {
         return fields[index];
     }
 
+    @Override
     public int getFieldsCount() {
         return fields.length;
     }
